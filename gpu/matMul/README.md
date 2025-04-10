@@ -13,7 +13,7 @@ qstat` check the status of ALL jobs on the system
 qdel <job number> deletes job
 
 ```
-## Matrix Multiplication on CPU
+## Matrix Multiplication on GPU
 ### Install packages:
 make logs folder: mkdir logs
 
