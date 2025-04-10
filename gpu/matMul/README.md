@@ -28,7 +28,6 @@ python -m venv "${VENV_DIR}" --system-site-packages
 
 source /home/anrunw/C2theP2ExerciseHPC/gpu/matMul/venvs/c2p2/bin/activate
 
-pip install torch
 
 pip install numba
 
