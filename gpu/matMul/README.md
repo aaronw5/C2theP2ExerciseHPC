@@ -33,7 +33,7 @@ pip install numba
 
 pip install pycuda
 
-pip install torchvision==0.15.2
+pip install torchvision
 
 
 ```
