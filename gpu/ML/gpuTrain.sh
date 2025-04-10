@@ -26,4 +26,4 @@ MPI_ARG="-n ${NTOTRANKS} --npernode ${NRANKS_PER_NODE} "
 MPI_ARG+=" -x OMP_NUM_THREADS=${NTHREADS} -x OMP_PROC_BIND=spread -x OMP_PLACES=cores "
 
 # Run the Python script using mpiexec
-mpiexec ${MPI_ARG} python matMul.py
+mpiexec ${MPI_ARG} python mnistGPU.py
