@@ -1,9 +1,11 @@
 
 ##Using PBS  
-```qsub <file> submits a batch job
+```
+qsub <file> submits a batch job
 qstat -u $USEr check the status of your jobs
 qstat` check the status of ALL jobs on the system
 qdel <job number> deletes job
+
 ```
 ## Matrix Multiplication on CPU
 ### Install packages:
@@ -37,4 +39,4 @@ Look at output logs and compare.
 
 ### Run Matrix multiplication with parallelization across CPU nodes
 
-edit `runMatMulMPI.sh` to run on 1 node and submit the job using `qsub runMatMulMPI.sh`
+edit `runMatMulMPI.sh` to run on 1 node and submit the job using `qsub runMatMulMPI.sh`  
