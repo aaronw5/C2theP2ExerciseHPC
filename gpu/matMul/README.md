@@ -26,7 +26,7 @@ mkdir -p "${VENV_DIR}"
 
 python -m venv "${VENV_DIR}" --system-site-packages
 
-source /home/anrunw/c2p2/gpu/matMul/venvs/c2p2/bin/activate
+source /home/anrunw/C2theP2ExerciseHPC/gpu/matMul/venvs/c2p2/bin/activate
 
 pip install torch
 
