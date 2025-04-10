@@ -37,17 +37,11 @@ pip install pycuda
 
 ```
 
-### Run matrix multiplication matrix without parallelization.
+### Run matrix multiplication matrix on GPU
 
-edit `runMatMulCPU.sh` to run on 1 node using vim, gromacs... by setting the value after select to 1: `#PBS -l select=1:system=crux`
+run `runMatMulGPU.sh` using qsub 
 
-Run the script: `qsub runMatMulCPU.sh`
 
-Go into logs and look at the `matMul.out` output. Notice how the output is printed multiple times. Why is that?
-
-Now, run it on 4 nodes. Do you expect it to run faster? slower? or the same?
-
-Look at output logs and compare. 
 
 
 ### Run Matrix multiplication with parallelization across CPU nodes
