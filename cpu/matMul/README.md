@@ -1,13 +1,13 @@
 
 ##Using PBS  
-`qsub <file>` submits a batch job
-`qstat -u $USER` check the status of your jobs
-`qstat` check the status of ALL jobs on the system
-`qdel <job number>` deletes job
-
+```qsub <file> submits a batch job
+qstat -u $USEr check the status of your jobs
+qstat` check the status of ALL jobs on the system
+qdel <job number> deletes job
+```
 ## Matrix Multiplication on CPU
 ### Install packages:
-make logs folder: `mkdir logs`
+make logs folder: mkdir logs
 
 ```
 python3 -m venv ~/c2p2
