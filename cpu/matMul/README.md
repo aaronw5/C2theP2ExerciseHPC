@@ -47,4 +47,6 @@ in `runMatMulMPI.sh` you can edit the run script
 
 `matMulMPI.py --no-naive -n <size of matrices> `  
 
-play around with the size of the matrices and start a job. See how at larger matrix sizes multiplication is still fast.
+`--no-naive` parameter disables the naive execution
+
+play around with the size of the matrices and start a job. See how at larger matrix sizes multiplication is still fast, but the naive implementation slows down. 
