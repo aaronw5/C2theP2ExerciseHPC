@@ -11,7 +11,7 @@
 
 # MPI+OpenMP example w/ 64 MPI ranks per node and threads spread evenly across cores
 # There are two 32-core CPUs on each node. This will run 32 MPI ranks per CPU, 2 OpenMP threads per rank, and each thread bound to a single core.
-. ~/_test_env/bin/activate
+. ~/c2p2/bin/activate
 NNODES=`wc -l < $PBS_NODEFILE`
 NRANKS_PER_NODE=64 # Number of MPI ranks to spawn per node
 NDEPTH=2 # Number of hardware threads per rank (i.e. spacing between MPI ranks)
