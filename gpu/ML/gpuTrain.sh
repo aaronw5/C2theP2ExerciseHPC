@@ -7,8 +7,8 @@
 #PBS -l filesystems=home:grand:eagle
 
 # Log output and error files
-#PBS -o logs/matMul.out
-#PBS -e logs/matMul.err
+#PBS -o logs/mnist.out
+#PBS -e logs/mnist.err
 
 cd ${PBS_O_WORKDIR}
 module use /soft/modulefiles; module load conda; conda activate base
