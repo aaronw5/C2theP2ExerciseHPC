@@ -6,3 +6,4 @@ https://miro.medium.com/v2/resize:fit:1400/format:webp/0*9jCey4wywZ4Os7hF.png![i
 
 MNIST is a dataset of handwritten digits. We are going to train a neural network to classify the images into the numerical classes.
 
+
