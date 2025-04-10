@@ -32,8 +32,8 @@ source /home/anrunw/C2theP2ExerciseHPC/gpu/matMul/venvs/c2p2/bin/activate
 pip install numba
 
 pip install pycuda
-
 pip install torchvision
+pip install --upgrade "torchvision<0.15"
 
 
 ```
