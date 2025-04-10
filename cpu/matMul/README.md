@@ -1,4 +1,10 @@
 
+##Using PBS  
+`qsub <file>` submits a batch job
+`qstat -u $USER` check the status of your jobs
+`qstat` check the status of ALL jobs on the system
+`qdel <job number>` deletes job
+
 ## Matrix Multiplication on CPU
 ### Install packages:
 make logs folder: `mkdir logs`
@@ -16,7 +22,7 @@ pip install numpy
 
 ```
 
-### Run matrix multiplication of 500 x 500 matrix without parallelization.
+### Run matrix multiplication matrix without parallelization.
 
 edit `runMatMulCPU.sh` to run on 1 node using vim, gromacs... by setting the value after select to 1: `#PBS -l select=1:system=crux`
 
@@ -27,3 +33,8 @@ Go into logs and look at the `matMul.out` output. Notice how the output is print
 Now, run it on 4 nodes. Do you expect it to run faster? slower? or the same?
 
 Look at output logs and compare. 
+
+
+### Run Matrix multiplication with parallelization across CPU nodes
+
+edit `runMatMulMPI.sh` to run on 1 node and submit the job using `qsub runMatMulMPI.sh`
