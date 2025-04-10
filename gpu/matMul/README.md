@@ -1,8 +1,10 @@
 
 
-# Using PBS on Crux
+# Using PBS on Sophia
 
-![image](https://github.com/user-attachments/assets/845e39b4-02a9-4288-bd2a-3ee8f4c93c1f)
+![image](https://github.com/user-attachments/assets/0d020781-322b-4a5b-b115-c0531904e16e)
+
+we will be running jobs using 1 gpu. If enough nodes are open, we can try running by node. 
 
 ```
 qsub <file> submits a batch job
@@ -16,15 +18,22 @@ qdel <job number> deletes job
 make logs folder: mkdir logs
 
 ```
-python3 -m venv ~/c2p2
+module use /soft/modulefiles; module load conda; conda activate base
 
-. ~/c2p2/bin/activate
+VENV_DIR="$(pwd)/venvs/c2p2"
 
-pip install mpi4py
+mkdir -p "${VENV_DIR}"
+
+python -m venv "${VENV_DIR}" --system-site-packages
+
+source /home/anrunw/c2p2/gpu/matMul/venvs/c2p2/bin/activate
+
+pip install torch
 
 pip install numba
 
-pip install numpy
+pip install pycuda
+
 
 ```
 
