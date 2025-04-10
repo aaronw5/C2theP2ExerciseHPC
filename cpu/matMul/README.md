@@ -1,6 +1,8 @@
 
 ## Matrix Multiplication on CPU
 ### Install packages:
+make logs folder: `mkdir logs`
+
 ```
 python3 -m venv ~/c2p2
 
@@ -13,10 +15,15 @@ pip install numba
 pip install numpy
 
 ```
+
 ### Run matrix multiplication of 500 x 500 matrix without parallelization.
 
 edit `runMatMulCPU.sh` to run on 1 node using vim, gromacs... by setting the value after select to 1: `#PBS -l select=1:system=crux`
 
 Run the script: `qsub runMatMulCPU.sh`
 
-Go into logs and look at the 
+Go into logs and look at the `matMul.out` output. Notice how the output is printed multiple times. Why is that?
+
+Now, run it on 4 nodes. Do you expect it to run faster? slower? or the same?
+
+Look at output logs and compare. 
