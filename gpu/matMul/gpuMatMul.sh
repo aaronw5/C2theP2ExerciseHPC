@@ -12,7 +12,7 @@
 
 cd ${PBS_O_WORKDIR}
 module use /soft/modulefiles; module load conda; conda activate base
-source /home/anrunw/c2p2/gpu/matMul/venvs/c2p2/bin/activate
+source /home/anrunw/C2theP2ExerciseHPC/gpu/matMul/venvs/c2p2/bin/activate
 NNODES=$(wc -l < $PBS_NODEFILE)
 NRANKS_PER_NODE=2
 NDEPTH=64
