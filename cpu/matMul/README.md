@@ -1,5 +1,8 @@
 
-##Using PBS  
+##Using PBS on Crux
+
+![image](https://github.com/user-attachments/assets/845e39b4-02a9-4288-bd2a-3ee8f4c93c1f)
+
 ```
 qsub <file> submits a batch job
 qstat -u $USEr check the status of your jobs
@@ -49,4 +52,4 @@ in `runMatMulMPI.sh` you can edit the run script
 
 `--no-naive` parameter disables the naive execution
 
-play around with the size of the matrices and start a job. See how at larger matrix sizes multiplication is still fast, but the naive implementation slows down. 
+play around with the size of the matrices and start a job. See how at larger matrix sizes multiplication is still fast, but the naive implementation slows down. Play around with the number of nodes, and see if runtime decreases with number of node. 
