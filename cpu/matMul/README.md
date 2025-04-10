@@ -39,4 +39,12 @@ Look at output logs and compare.
 
 ### Run Matrix multiplication with parallelization across CPU nodes
 
-edit `runMatMulMPI.sh` to run on 1 node and submit the job using `qsub runMatMulMPI.sh`  
+edit `runMatMulMPI.sh` to run on 1 node and submit the job using `qsub runMatMulMPI.sh`. Look at output in logs. 
+
+Now, run it on 4 nodes. Compare the runtime of the matrix multiplications. 
+
+in `runMatMulMPI.sh` you can edit the run script 
+
+`matMulMPI.py --no-naive -n <size of matrices> `  
+
+play around with the size of the matrices and start a job. See how at larger matrix sizes multiplication is still fast.
